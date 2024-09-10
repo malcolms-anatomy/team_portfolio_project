@@ -60,7 +60,7 @@ The URL Shortener Web App allows users to shorten long URLs into compact URLs fo
 - **Frontend**: HTML, CSS
 - **Deployment**:
   - GitHub Pages for the landing page
-  - Heroku for the web app
+  - Render for the web app
 
 ---
 
