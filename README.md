@@ -25,7 +25,7 @@ This project is comprised of two main components:
 ## Project Structure
 The project is organized into two primary sections:
 - **Landing Page**: Built using HTML, CSS, and JavaScript, deployed on GitHub Pages.
-- **URL Shortener Web App**: Built using Flask (Python), deployed on Heroku.
+- **URL Shortener Web App**: Built using Flask (Python), deployed on Render.
 
 ---
 
