@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+/* Paragraphs */
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #333;
