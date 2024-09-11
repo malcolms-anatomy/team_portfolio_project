@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 # Initialize the SQLite Database
 def init_db():
+    print("Initializing database...")
     with sqlite3.connect('database.db') as conn:
         c = conn.cursor()
         c.execute('''
@@ -17,6 +18,7 @@ def init_db():
             )
         ''')
         conn.commit()
+    print("Database initialized.")
 
 # Generate a short URL
 def generate_short_url(original_url):
