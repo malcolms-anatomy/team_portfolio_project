@@ -19,7 +19,7 @@
 
 ## Introduction
 This project is comprised of two main components:
-1. A **Landing Page** that introduces the project, showcases key features, and provides an introduction to the team.
+1. A **Landing Page** that introduces the project, showcases key features and provides an introduction to the team.
 2. A **URL Shortener Web App** that allows users to input a long URL and receive a shortened version that redirects to the original URL.
 
 ## Project Structure
@@ -31,7 +31,7 @@ The project is organized into two primary sections:
 
 ## Landing Page
 
-The landing page serves as an introduction to the project. It explains the purpose of the URL shortener, highlights features, introduces team members, and contains a button that links to the deployed web app.
+The landing page serves as an introduction to the project. It explains the purpose of the URL shortener, highlights features, introduces team members and contains a button that links to the deployed web app.
 
 ### Features
 - **Intro Section**: Contains a cover image, project name, a brief description, and navigation elements.
@@ -72,7 +72,7 @@ The landing page is deployed using GitHub Pages. To view the live landing page, 
 1. **Open your browser** and navigate to `[https://malcolms-anatomy.github.io/team_portfolio_project/]`.
 2. The landing page introduces the URL shortener, showcases features, and includes a button to navigate to the web app.
 
-### URL Shortener on Heroku
+### URL Shortener on Render
 
 The URL shortener web app is deployed on Render. To use the app:
 1. **Visit the web app** at `https://url-shortener-3tts.onrender.com/`.
