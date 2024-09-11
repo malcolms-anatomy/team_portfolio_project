@@ -1,18 +1,25 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
 nav ul {
     list-style-type: none;
-    padding: 10px;
-    background-color: #333;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -24,82 +31,155 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
 }
 
 /* Intro Section */
 #intro {
-    position: relative;
     text-align: center;
-    padding: 50px;
-    background-image: url('cover-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    height: 100vh; /* Makes the section full height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('static/images/cover-image.jpg') no-repeat center center/cover;
+    color: white;
 }
 
 #intro h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 #intro p {
     font-size: 20px;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 #intro .button {
     background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
-/* Feature Section */
+#intro .button:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+#features {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
 .features-container {
     display: flex;
-    justify-content: space-around;
-    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .feature {
-    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
 }
 
 .feature img {
     width: 100%;
-    height: auto;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 /* About Section */
 #about {
-    padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #fff;
+    padding: 60px 20px;
     text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 #about ul {
     list-style-type: none;
+    margin-top: 20px;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#about ul li a:hover {
+    color: #0056b3;
 }
 
 /* Video Section */
 #video {
-    padding: 50px;
+    background-color: #f4f4f4;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* Responsive design for mobile view */
-@media screen and (max-width: 768px) {
-    #intro {
-        padding: 20px;
-        height: auto; /* Adjust height for mobile */
+#video h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#video p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#video video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
     }
 
     #intro h1 {
@@ -112,10 +192,9 @@ nav ul li a {
 
     .features-container {
         flex-direction: column;
-        padding: 20px;
     }
 
     .feature {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
