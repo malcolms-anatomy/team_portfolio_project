@@ -28,15 +28,23 @@ nav ul li a {
 
 /* Intro Section */
 #intro {
+    position: relative;
     text-align: center;
     padding: 50px;
     background-image: url('cover-image.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
+    height: 100vh; /* Makes the section full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #intro h1 {
     font-size: 48px;
+    margin: 0;
 }
 
 #intro p {
@@ -86,4 +94,28 @@ nav ul li a {
     padding: 50px;
     text-align: center;
 }
- 
+
+/* Responsive design for mobile view */
+@media screen and (max-width: 768px) {
+    #intro {
+        padding: 20px;
+        height: auto; /* Adjust height for mobile */
+    }
+
+    #intro h1 {
+        font-size: 36px;
+    }
+
+    #intro p {
+        font-size: 18px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+}
