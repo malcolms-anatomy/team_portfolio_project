@@ -6,6 +6,24 @@
     <title>URL Shortener Landing Page</title>
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="static/css/styles.css">
+    <script>
+    // Function to detect if the user is on a mobile device
+    function isMobileDevice() {
+        return (window.innerWidth <= 768); // Adjust the screen width threshold if necessary
+    }
+
+    // Show a message if the user is on a mobile device
+    window.onload = function() {
+        if (isMobileDevice()) {
+            // Display a message and hide the page content
+            document.body.innerHTML = `
+                <div style="text-align: center; padding: 50px;">
+                    <h1>Access Restricted</h1>
+                    <p>This page is not accessible on mobile devices. Please visit this page on a desktop device.</p>
+                </div>`;
+        }
+    };
+</script>
 </head>
 <body>
     <!-- Navigation Bar -->
